@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Suite">
+	<parameter name="url" value="https://login.salesforce.com/"></parameter>
+	<parameter name="username" value="psjmythily@gmail.com"></parameter>
+	<parameter name="password" value="Mythily@25"></parameter>
+	<test thread-count="2" parallel="classes" name="Test">
+		<classes>
+			<class name="independenceday_marathon.Question" />
+			<class name="independenceday_marathon.Individuals" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+
